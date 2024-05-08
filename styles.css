@@ -1,0 +1,30 @@
+
+
+h2{
+    text-align: center;
+}
+
+:root {
+    --rouge: rgba(189, 14, 14, 0.37);
+    --bordure-couleur: #ccc;
+}
+
+.tableau-periodique {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr); /* Adapter le nombre de colonnes en fonction de votre disposition */
+    gap: 1px; /* Espacement entre les cellules */
+}
+
+.element {
+    border: 1px solid var(--bordure-couleur);
+    padding: 10px;
+    font-family: Courier New, Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+
+.element:hover {
+    cursor: pointer;
+    background-color: var(--rouge);
+    color: white;
+}
